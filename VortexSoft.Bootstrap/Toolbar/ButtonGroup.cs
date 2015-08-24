@@ -39,10 +39,9 @@ namespace VortexSoft.Bootstrap
 
             switch (cssClass)
             {
-                case BootstrapNamedColor.Important: builder.AddCssClass("btn btn-danger"); break;
                 case BootstrapNamedColor.Default: builder.AddCssClass("btn"); break;
                 case BootstrapNamedColor.Info: builder.AddCssClass("btn btn-info"); break;
-                case BootstrapNamedColor.Inverse: builder.AddCssClass("btn btn-inverse"); break;
+                case BootstrapNamedColor.Danger: builder.AddCssClass("btn btn-danger"); break;
                 case BootstrapNamedColor.Primary: builder.AddCssClass("btn btn-primary"); break;
                 case BootstrapNamedColor.Success: builder.AddCssClass("btn btn-success"); break;
                 case BootstrapNamedColor.Warning: builder.AddCssClass("btn btn-warning"); break;
