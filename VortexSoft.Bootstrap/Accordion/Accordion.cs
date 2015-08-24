@@ -15,7 +15,7 @@ namespace VortexSoft.Bootstrap
             : base("div", htmlAttributes)
         {
             this.Id = HtmlHelper.GenerateIdFromName(id);
-            EnsureClass("accordion");
+            EnsureClass("panel-group");
             EnsureHtmlAttribute("id", this.Id);
         }
     }

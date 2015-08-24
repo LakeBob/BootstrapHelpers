@@ -16,7 +16,7 @@ namespace VortexSoft.Bootstrap
         internal ControlGroup(TextWriter writer, HtmlHelper<TModel> htmlHelper)
         {
             this.textWriter = writer;
-            this.textWriter.Write(@"<div class=""control-group"">");
+            this.textWriter.Write(@"<div class=""form-group"">");
             this.htmlHelper = htmlHelper;
         }
 
@@ -34,7 +34,7 @@ namespace VortexSoft.Bootstrap
 
         public void ControlLabel(string expression, IDictionary<string, object> htmlAttributes)
         {
-            EnsureHtmlAttribute(htmlAttributes, "class", "control-label");
+            EnsureHtmlAttribute(htmlAttributes, "class", "form-label");
             this.textWriter.Write(htmlHelper.Label(expression, htmlAttributes));
         }
 
@@ -50,7 +50,7 @@ namespace VortexSoft.Bootstrap
 
         public void ControlLabel(string expression, string labelText, IDictionary<string, object> htmlAttributes)
         {
-            EnsureHtmlAttribute(htmlAttributes, "class", "control-label");
+            EnsureHtmlAttribute(htmlAttributes, "class", "form-label");
             this.textWriter.Write(htmlHelper.Label(expression, labelText, htmlAttributes));
         }
 
@@ -66,7 +66,7 @@ namespace VortexSoft.Bootstrap
 
         public void ControlLabelFor<TValue>(Expression<Func<TModel, TValue>> expression, IDictionary<string, object> htmlAttributes)
         {
-            EnsureHtmlAttribute(htmlAttributes, "class", "control-label");
+            EnsureHtmlAttribute(htmlAttributes, "class", "form-label");
             this.textWriter.Write(htmlHelper.LabelFor(expression, htmlAttributes));
         }
 
@@ -82,7 +82,7 @@ namespace VortexSoft.Bootstrap
 
         public void ControlLabelFor<TValue>(Expression<Func<TModel, TValue>> expression, string labelText, IDictionary<string, object> htmlAttributes)
         {
-            EnsureHtmlAttribute(htmlAttributes, "class", "control-label");
+            EnsureHtmlAttribute(htmlAttributes, "class", "form-label");
             this.textWriter.Write(htmlHelper.LabelFor(expression, labelText, htmlAttributes));
         }
 

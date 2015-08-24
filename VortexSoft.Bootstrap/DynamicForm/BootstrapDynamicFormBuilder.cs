@@ -132,36 +132,36 @@ namespace VortexSoft.Bootstrap
                         #endregion DisplayAttribute
 
                         // Control-Group
-                        textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "control-group");
+                        textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "form-group");
                         textWriter.RenderBeginTag(HtmlTextWriterTag.Div);
 
                         // Label
-                        textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "control-label");
+                        textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "form-label");
                         textWriter.AddAttribute(HtmlTextWriterAttribute.For, property.Name);
                         textWriter.RenderBeginTag(HtmlTextWriterTag.Label);
                         textWriter.Write(displayName);
                         textWriter.RenderEndTag(); // label
 
                         // Controls Div
-                        textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "controls");
+                        textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "form-control");
                         textWriter.RenderBeginTag(HtmlTextWriterTag.Div);
 
                         // Control
                         RenderDynamicControl(textWriter, model, property);
 
                         textWriter.RenderEndTag(); // div (Controls Div)
-                        textWriter.RenderEndTag(); // div (Control-Group)
+                        textWriter.RenderEndTag(); // div (form-group)
                     }
 
                     textWriter.RenderEndTag(); // fieldset
                 }
 
-                // Buttons Control-Group
-                textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "control-group");
+                // Buttons form-group
+                textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "form-group");
                 textWriter.RenderBeginTag(HtmlTextWriterTag.Div);
 
                 // Controls Div
-                textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "controls");
+                textWriter.AddAttribute(HtmlTextWriterAttribute.Class, "form-control");
                 textWriter.RenderBeginTag(HtmlTextWriterTag.Div);
 
                 // Submit Button
@@ -183,7 +183,7 @@ namespace VortexSoft.Bootstrap
 
                 textWriter.RenderEndTag(); // div (Controls Div)
 
-                textWriter.RenderEndTag(); // div (Buttons Control-Group)
+                textWriter.RenderEndTag(); // div (Buttons form-group)
 
                 return new MvcHtmlString(sb.ToString());
             }

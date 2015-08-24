@@ -17,10 +17,10 @@ namespace VortexSoft.Bootstrap
 
             this.textWriter = writer;
 
-            this.textWriter.Write(@"<div class=""accordion-group"">");
+            this.textWriter.Write(@"<div class=""panel panel-default"">");
 
             TagBuilder builder = new TagBuilder("div");
-            builder.AddCssClass("accordion-heading");
+            builder.AddCssClass("panel-heading");
 
             TagBuilder builder2 = new TagBuilder("a");
             builder2.Attributes.Add("href", "#" + panelId);
@@ -34,11 +34,11 @@ namespace VortexSoft.Bootstrap
             this.textWriter.Write(builder.ToString());
 
             builder = new TagBuilder("div");
-            builder.AddCssClass("accordion-body collapse");
+            builder.AddCssClass("panel-collapse collapse");
             builder.MergeAttribute("id", panelId);
 
             this.textWriter.Write(builder.ToString(TagRenderMode.StartTag));
-            this.textWriter.Write(@"<div class=""accordion-inner"">");
+            this.textWriter.Write(@"<div class=""panel-body"">");
         }
 
         public void Dispose()

@@ -9,13 +9,13 @@ namespace VortexSoft.Bootstrap
 
         internal ControlsSection(TextWriter writer)
         {
-            this.textWriter = writer;
-            this.textWriter.Write(@"<div class=""controls"">");
+           // this.textWriter = writer;
+           // this.textWriter.Write(@"<div class=""form-control"">");
         }
 
         public void Dispose()
         {
-            this.textWriter.Write("</div>");
+         //   this.textWriter.Write("</div>");
         }
     }
 }

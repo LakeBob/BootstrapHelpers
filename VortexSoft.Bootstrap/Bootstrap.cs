@@ -490,22 +490,22 @@ namespace VortexSoft.Bootstrap
             }
 
             var builder = new TagBuilder("div");
-            builder.AddCssClass("input-prepend");
+            builder.AddCssClass("input-group");
 
             if (showCents)
             {
-                builder.AddCssClass("input-append");
+                builder.AddCssClass("input-group");
             }
 
             var sb = new StringBuilder();
-            sb.Append(@"<span class=""add-on"">");
+            sb.Append(@"<span class=""input-group-addon"">");
             sb.Append(string.IsNullOrEmpty(currencySymbol) ? "$" : currencySymbol);
             sb.Append("</span>");
             sb.Append(helper.TextBox(name, dollars, htmlAttributes));
 
             if (showCents)
             {
-                sb.Append(@"<span class=""add-on"">.");
+                sb.Append(@"<span class=""input-group-addon"">.");
                 sb.Append(cents < 10 ? "0" + cents : cents.ToString());
                 sb.Append("</span>");
             }
