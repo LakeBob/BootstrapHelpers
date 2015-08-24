@@ -16,7 +16,7 @@
         {
             this.Heading = heading;
             this.Tagline = tagline;
-            EnsureClass("hero-unit");
+            EnsureClass("jumbotron");
         }
     }
 }
