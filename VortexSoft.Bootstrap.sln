@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VortexSoft.Bootstrap.Demo", "VortexSoft.Bootstrap.Demo\VortexSoft.Bootstrap.Demo.csproj", "{16970A6F-42F4-410F-AC05-5D6B60A7C903}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VortexSoft.Bootstrap", "VortexSoft.Bootstrap\VortexSoft.Bootstrap.csproj", "{371BABEC-5A00-464D-8EBB-09C32CA4C326}"
